@@ -1,2 +1,2 @@
 # Data-Science-
-DS work goes here
+The Intuitive Medical Marijuana Application
