@@ -1,4 +1,4 @@
-"""Code for Intuitive Medical Marijuana App""" 
+"""Code for The Intuitive Medical Marijuana App""" 
 
 from flask import Flask, render_template, request, jsonify
 from scipy import spatial
@@ -95,16 +95,16 @@ def predict_symptons(user_input_symp):
         return score
     
     # Objective 3: call function to set the value of 'score' which is the score of the user input
-    for i in range():
+    for i in range(2351):
         score = score_user_input_from_embedding_from_stored_values(user_input_symp, score, i, user_input_embedding)
         # store score in df
         df.loc[i, 'score'] = score
     
     # Objective 4: return all data for the top five results as a json obj
-    #df_big_json = df.sort_vlaues(by='score', ascending=False)
-    #df_big_json = df_big_json.drop(['Unnamed: 0', 'Unnamed: 0.1'], axis = 1)
-    #df_big_json = df_big_json[:5]
-    #df_big_json = df_big_json.to_json(orient='columns')
+    df_big_json = df.sort_vlaues(by='score', ascending=False)
+    df_big_json = df_big_json.drop(['Unnamed: 0', 'Unnamed: 0.1'], axis = 1)
+    df_big_json = df_big_json[:5]
+    df_big_json = df_big_json.to_json(orient='columns')
 
     # Objective 5: output
     return df_big_json
