@@ -1,2 +1,2 @@
 # Data-Science-
-The Intuitive Medical Marijuana Application
+The Intuitive Medical Marijuana App

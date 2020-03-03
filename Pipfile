@@ -7,6 +7,11 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+basilica = "*"
+numpy = "*"
+pandas = "*"
+scipy = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
