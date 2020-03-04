@@ -58,7 +58,7 @@ def general():
     # output to sender
     return output
 
-"""User Input"""
+###User Input###
 
 user_input_symp = ''
 
@@ -101,10 +101,6 @@ def predict_symptons(user_input_symp):
         df.loc[i, 'score'] = score
     
     # Objective 4: return all data for the top five results as a json obj
-    df_big_json = df.sort_vlaues(by='score', ascending=False)
-    df_big_json = df_big_json.drop(['Unnamed: 0', 'Unnamed: 0.1'], axis = 1)
-    df_big_json = df_big_json[:5]
-    df_big_json = df_big_json.to_json(orient='columns')
 
     # Objective 5: output
-    return df_big_json
+    
