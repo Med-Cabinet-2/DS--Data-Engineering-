@@ -12,6 +12,10 @@ numpy = "*"
 pandas = "*"
 scipy = "*"
 gunicorn = "*"
+flake8 = "*"
+joblib = "*"
+python-dotenv = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.7"
