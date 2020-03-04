@@ -18,18 +18,18 @@ def create_app():
     def advise():
         """
         Generate strain advise from user input as JSON.
-        Output space-separated string with 5 strain suggestions.
+        Output string with five advised strains.
         """
         input = request.get_json(force=True)
         advisor = Advisor()
         advise = advisor.strain_advisor(input["input"])
         string_advise = " ".join(str(i) for i in advise)
 
-        return string_suggestion
+        return string_advise
 
     @app.route('/test')
     def test():
-        """ Generate test page for baseline API tests. """
-        return '<h1>Success!</h1>'
+        """test page for baseline API"""
+        return 'Mazel Tov!'
 
     return app
