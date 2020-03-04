@@ -1,1 +1,1 @@
-web: gunicorn -w 4 advisor:APP -t 120
+web: gunicorn app:APP
