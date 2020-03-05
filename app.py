@@ -27,7 +27,7 @@ def create_app():
     @app.route('/test')
     def test():
         """test page for baseline API"""
-        return 'Mazel Tov!'
+        return 'Congrats!'
     
     return app
 
