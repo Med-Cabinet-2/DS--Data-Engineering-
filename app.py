@@ -1,7 +1,8 @@
 """Code for the Intuitive Medical Marijuana App"""
 from dotenv import load_dotenv
 from flask import Flask, request
-from .predict import Advisor
+from predict import Advisor
+
 
 # Initialize .env file
 load_dotenv()
