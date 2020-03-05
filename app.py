@@ -16,10 +16,7 @@ def create_app():
 
     @app.route('/advise', methods=['POST'])
     def advise():
-        """
-        Generate strain advise from user input as JSON.
-        Output string with five advised strains.
-        """
+        """Generate strain advise from user input as JSON"""
         input = request.get_json(force=True)
         advisor = Advisor()
         advise = advisor.strain_advisor(input["input"])
@@ -31,5 +28,8 @@ def create_app():
     def test():
         """test page for baseline API"""
         return 'Mazel Tov!'
-
+    
     return app
+
+if __name__ == "__main__":
+    app.run(debug=True)
