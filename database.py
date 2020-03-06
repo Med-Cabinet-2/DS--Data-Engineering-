@@ -1,8 +1,8 @@
 import csv, sqlite3
 import pandas as pd
 
-#path_base = ''
-#df = pd.read_csv(r'/home/chase/repos/DS--Data-Engineering-/cannabis.csv)
+path_base = (r'/home/chase/repos/DS--Data-Engineering-/cannabis.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/gptix/DS--Data-Engineering-/master/data/cannabis.csv')
 
 
 col_list = list(df.columns)
